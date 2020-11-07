@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  web-static:
+    image: web-static
+    build:
+      context: .
+    ports:
+      - "80:80"
+    networks:
+      - overlay
+
+
+networks:
+  overlay:
